@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/ejercicio5.css">
+    <script src="../js/functions.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="../img/nasa.png" alt="Logo">
+        <h1>Eventos en el mundo</h1>
+        <div class="navbar">
+            <button class="dropbtn">
+                <img src="../img/menu.png" style="width: 20px; height: 20px;">
+            </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Inicio</a>
+                    <a href="ejercicio9.html">Ejercicio 9</a>
+                </div>
+          </div>
+    </header>
+    <main>
+      <!-----filtro de fecha------->
+      <div id="filtroFecha">
+        <input type="date" id="fechaInicio">
+        <input type="date" id="fechaFin">
+        <button class="boton1" onclick="getEventoByFecha()">
+            <span>Buscar</span>
+        </button>
+        <button class="boton2" onclick="limpiarResultados()">
+          <span>Limpiar</span>
+      </button>
+      </div>
+      <div id="resultados"></div>
+    </main>
+
+    <footer>
+        <h3>Pagina desarrollada por un estudiante de San Valero</h3>
+        <a href="https://eonet.gsfc.nasa.gov/docs/v3">APi para eventos</a>
+        <a href="weatherapi.com">APi para el tiempo</a>
+        <a href="https://cesium.com/">Web que proporciona el mapa 3d</a>
+    </footer>
+    </body>
+</html>

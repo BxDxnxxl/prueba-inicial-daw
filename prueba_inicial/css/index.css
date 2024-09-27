@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+}
+body{
+  background-color: #a3a8b3;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* HEADER */
+header {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Imagen de la nasa*/
+header img {
+  width: 5%;
+  height: auto;
+}
+
+/*Titulo del header*/
+header h1 {
+  align-items: center;
+  margin-right: 10%;
+  color: #f80000;
+}
+
+/*menu desplegable del header*/
+.navbar {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar .dropbtn {
+  background-color: white;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #8990a2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.navbar .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar:hover .dropdown-content {
+  display: block;
+}
+
+/*contenido debajo del header, el resto de la página*/
+main{
+  margin-top: 2%;
+  display: flex;
+  margin-bottom: 5.35%;
+}
+
+/*estilos de los checkbox, sacados de codepen*/
+#checkboxMenu {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  height: 50%;
+  background-color: #f0f4f8; /* Fondo distinto */
+  width: 10%; /* Ancho fijo del contenedor */
+  margin: 20px auto; /* Centrar en la página */
+}
+
+#checkboxMenu h3 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#checkboxes p {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+#checkboxes input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  outline: none;
+  transition: background-color 0.3s, border-color 0.3s;
+  cursor: pointer;
+  position: relative;
+  margin-right: 10px;
+}
+
+#checkboxes input[type="checkbox"]:checked {
+  background-color: black;
+  border-color: white;
+}
+
+#checkboxes input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+#checkboxes label {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+/*estilos del mapa*/
+#map {
+  height: 600px;
+  width: 80%;
+  margin-right: 11%;  
+  margin-left: 4%;
+}
+
+footer{
+  background-color: black;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer h3 {
+  align-items: center;
+  margin-right: 10%;
+  color: #f80000;
+}
+
+footer a {
+  align-items: center;
+  margin-right: 10%;
+  color: #f80000;
+}
